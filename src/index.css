@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #4f46e5;
+  --color-secondary: #7c3aed;
+  --color-tertiary: #06b6d4;
+}
+
+.bg-theme-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-theme-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-theme-tertiary {
+  background-color: var(--color-tertiary);
+}
+
+.text-theme-primary {
+  color: var(--color-primary);
+}
+
+.text-theme-secondary {
+  color: var(--color-secondary);
+}
+
+.text-theme-tertiary {
+  color: var(--color-tertiary);
+}
+
+.border-theme-primary {
+  border-color: var(--color-primary);
+}
+
+/* Global button styles */
+.btn-primary {
+  @apply px-4 py-2 bg-theme-primary text-white rounded-lg hover:opacity-90 transition-colors;
+}
+
+.btn-outline {
+  @apply px-4 py-2 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition-colors;
+}
+
+.btn-link {
+  @apply text-theme-primary hover:underline transition-colors;
+}
